@@ -1,8 +1,7 @@
 <?php
     $name_site = "324712 (Mitchel Jansen)";
 
-    //$con = @mysqli_connect("localhost", "root", "", "324712");
-    $con = @mysqli_connect("localhost", "mitchelmbo_info", "VHDBzUDmcP", "mitchelmbo_info");
+    $con = @mysqli_connect("localhost", "root", "", "324712");
 
     if (!$con) {
         echo "
