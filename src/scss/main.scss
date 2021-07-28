@@ -1,0 +1,52 @@
+@import "alerts";
+@import "badges";
+@import "buttons";
+@import "cards";
+@import "root";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Import color with rgb from root:     rgb(var(--colorName))
+// Import simple var from root:         var(--varName)
+
+html,body {
+  margin: 0;
+  padding: 0;
+  background: rgb(var(--colorBackground));
+  font-family: var(--fontBase);
+  font-size: var(--fontSize);
+  color: rgb(var(--colorText));
+}
+
+.middle-content {
+  margin: 75px auto 0 auto;
+  width: 450px;
+
+  &.devnull {
+    width: 750px;
+
+    .uk-form-label {
+      margin: 0 0 10px 0;
+      font-weight: 600;
+      float: left;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .middle-content {
+    width: 90% !important;
+
+    .btn-padding {
+      width: 75px !important;
+      font-size: 12px !important;
+    }
+
+    #year-1, #year-2, #year-3 {
+      .badge {
+        display: none !important;
+      }
+    }
+  }
+}
