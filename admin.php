@@ -58,8 +58,8 @@ require('./inc/configuration.php');
                                     <td><div class="badge no-margin">' . $record['year'] . '</div></td>
                                     <td>' . $record['linkname'] . '</td>
                                     <td>
-                                        <a href="./devnull_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
-                                        <a href="./devnull_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
+                                        <a href="./admin_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
+                                        <a href="./admin_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
                                     </td>
                                 </tr>
                                 ';
@@ -98,8 +98,8 @@ require('./inc/configuration.php');
                                     <td><div class="badge no-margin">' . $record['year'] . '</div></td>
                                     <td>' . $record['linkname'] . '</td>
                                     <td>
-                                        <a href="./devnull_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
-                                        <a href="./devnull_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
+                                        <a href="./admin_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
+                                        <a href="./admin_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
                                     </td>
                                 </tr>
                                 ';
@@ -138,8 +138,8 @@ require('./inc/configuration.php');
                                     <td><div class="badge no-margin">' . $record['year'] . '</div></td>
                                     <td>' . $record['linkname'] . '</td>
                                     <td>
-                                        <a href="./devnull_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
-                                        <a href="./devnull_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
+                                        <a href="./admin_update.php?id=' . $record['id'] . '" class="btn btn-success btn-sm btn-no-margin">Edit</button>
+                                        <a href="./admin_delete.php?id=' . $record['id'] . '" class="btn btn-primary btn-sm btn-no-margin">Delete</button>
                                     </td>
                                 </tr>
                                 ';
@@ -175,7 +175,7 @@ require('./inc/configuration.php');
                             if(mysqli_query($con, $sql)) {
                                 echo "
                                 <div class='uk-alert-success' uk-alert>
-                                    <p>Aangemaakt kut.</p>
+                                    <p>Created!</p>
                                 </div>
                             ";
                             }

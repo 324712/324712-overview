@@ -5,4 +5,4 @@
     $sql = "DELETE FROM `information` WHERE `id` = $id";
     mysqli_query($con, $sql);
 
-    header("Location: ./devnull.php");
+    header("Location: ./admin.php");

@@ -55,7 +55,7 @@ require('./inc/configuration.php');
                                 <p>Succesfull edited.!</p>
                             </div>
                         ";
-                        header("Refresh:1; url=./devnull.php");
+                        header("Refresh:1; url=./admin.php");
                     }
                 }
                 ?>
